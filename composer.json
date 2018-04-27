@@ -1,0 +1,22 @@
+{
+    "name": "zhongzhiliang/modern-php",
+    "authors": [
+        {
+            "name": "ericivan",
+            "email": "ericivan047@gmail.com"
+        }
+    ],
+    "require": {
+        "php-di/php-di": "^6.0",
+        "relay/relay": "2.x@dev",
+        "zendframework/zend-diactoros": "^1.7",
+        "middlewares/fast-route": "^1.0",
+        "middlewares/request-handler": "^1.1"
+    },
+    "autoload":{
+        "psr-4":{
+            "Modern\\":"src/"
+        }
+
+    }
+}
