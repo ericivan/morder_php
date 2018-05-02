@@ -52,6 +52,7 @@ class ComposerStaticInit34858d7b09c65e34dbce171f728639d1
         ),
         'D' => 
         array (
+            'Doctrine\\Common\\Annotations\\' => 28,
             'DI\\' => 3,
         ),
     );
@@ -123,9 +124,23 @@ class ComposerStaticInit34858d7b09c65e34dbce171f728639d1
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
         'DI\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-di/php-di/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'D' => 
+        array (
+            'Doctrine\\Common\\Lexer\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
+            ),
         ),
     );
 
@@ -134,6 +149,7 @@ class ComposerStaticInit34858d7b09c65e34dbce171f728639d1
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit34858d7b09c65e34dbce171f728639d1::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit34858d7b09c65e34dbce171f728639d1::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit34858d7b09c65e34dbce171f728639d1::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

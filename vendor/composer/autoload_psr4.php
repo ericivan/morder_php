@@ -22,5 +22,6 @@ return array(
     'Invoker\\' => array($vendorDir . '/php-di/invoker/src'),
     'Interop\\Http\\Factory\\' => array($vendorDir . '/http-interop/http-factory/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
+    'Doctrine\\Common\\Annotations\\' => array($vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations'),
     'DI\\' => array($vendorDir . '/php-di/php-di/src'),
 );
